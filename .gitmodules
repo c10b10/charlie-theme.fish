@@ -1,0 +1,3 @@
+[submodule "plugin-vcs"]
+	path = plugin-vcs
+	url = https://github.com/oh-my-fish/plugin-vcs.git
