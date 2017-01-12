@@ -1,6 +1,6 @@
 # Charlie
 
-A fish command promp based on [Charlie for Zsh](https://github.com/c10b10/charlie), and [brandonweiss's Pure port for fish](https://github.com/brandonweiss/pure.fish).
+A fish command prompt based on [Charlie for Zsh](https://github.com/c10b10/charlie), and [brandonweiss's Pure port for fish](https://github.com/brandonweiss/pure.fish).
 
 ![](screenshot.png)
 
