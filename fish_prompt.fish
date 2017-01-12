@@ -129,31 +129,38 @@ function fish_prompt
   if test "$vcs_name" = ''
     printf "\n"
   end
+
+  # VCS Symbols
   _print_vcs_symbol $vcs_name
+
+  # Git Arrows
   if test "$vcs_name" = 'git'
     set -l git_arrows (_git_upstream_status)
     if test $git_arrows
       _print_in_color $git_arrows (_get_color 220)
     end
   end
+
+  # Virtual Env
   _print_virtual_env
+
   # ~/...
   _print_in_color (_pwd_with_tilde) (_get_color 112)
 
-  if test "$vcs_name" = 'git'
+  if test "$vcs_name"
     _print_in_color " "(vcs.branch) (_get_color 172)
-    set -l conflict (vcs.conflict)
-    if test "$conflict"
-      _print_in_color "|$conflict" (_get_color 172)
-    end
-    if test (vcs.stashed)
-      _print_in_color "∃" yellow
+     set -l conflict (vcs.conflict)
+     if test "$conflict"
+       _print_in_color "|$conflict" (_get_color 172)
+     end
+     if test (vcs.stashed)
+       _print_in_color "∃" yellow
+     end
+    if vcs.staged
+      _print_in_color "+" green
     end
     if vcs.dirty
       _print_in_color "*" red
-    end
-    if vcs.staged
-      _print_in_color "+" green
     end
   end
 
