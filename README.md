@@ -16,7 +16,7 @@ staged files (with a `+`).
 - Shows the current path in the title and the current folder & command when a process is running.
 - Makes an excellent starting point for your own custom prompt.
 - Has SVN and Mercurial support.
-- Shows [Python virtualenv info](https://github.com/c10b10/charlie/blob/master/charlie.zsh#L78-L93).
+- Shows Python virtualenv info.
 
 ## Requirements
 
