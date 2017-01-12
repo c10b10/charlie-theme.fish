@@ -6,7 +6,7 @@ A fish command prompt based on [Charlie for Zsh](https://github.com/c10b10/charl
 
 ## Features
 
-- Shows `git` branch and whether it's dirty (with a `*`) or wether it has
+- Shows the VCS branch and whether it's dirty (with a `*`) or wether it has
 staged files (with a `+`).
 - Indicates when you have unpushed/unpulled `git` commits with up/down arrows.
 - If the command didn't exit with `0`:
